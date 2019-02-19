@@ -9,8 +9,9 @@
 <body>
     <script src="twitter.js"></script>
     <form action="" target="_self">
-        <textarea id="tweet" type="text" placeholder="What's hapenning?"></textarea><br>
-        <button id="button" type="button" onclick="text()" disabled="disab()">Tweet</button>
+        <textarea id="tweet" type="text" placeholder="What's hapenning?" oninput="count()"></textarea><br>
+        <button id="button" type="button" disabled onclick="text()">Tweet</button>
+        <p id="count"></p>
         <p id="post"></p>
     </form>
 </body>
