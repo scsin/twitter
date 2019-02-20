@@ -1,6 +1,8 @@
 let post;
 
-document.getElementById("button").disabled = true;
+// Substituição do onclick
+// let btn = document.getElementById("button");
+// btn.addEventListener('click', text);
 
 function text() {
     post = document.getElementById("tweet").value;
@@ -9,12 +11,19 @@ function text() {
 
 function count() {
     post = document.getElementById("tweet").value;
-    let count = (140 - post.length);
+    var count = (140 - post.length);
     document.getElementById("count").innerHTML = count;
-    if(post.length == 0) {
+    if(post.length == 0 || post.length > 140) {
         document.getElementById("button").disabled = true;
     }
     else{
         document.getElementById("button").disabled = false;
     }
+    if(count < 30 && count >= 20) {
+        document.getElementById("count").className = "hundtw";
+    }
+    if(count < 20 && count >= 0) {
+        document.getElementById("count").className = "hundth";
+    }
 }
+

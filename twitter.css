@@ -10,3 +10,15 @@ input {
 button {
     margin-top: 1cm;
 }
+
+.default {
+    color: rgb(0, 0, 0);
+}
+
+.hundtw {
+    color: rgb(230, 145, 35);
+}
+
+.hundth {
+    color: red;
+}
