@@ -1,19 +1,20 @@
 header {
     width: auto;
-    height: 45px;
+    height: 55px;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px;
     border-bottom-style: solid;
-    margin: -8px;;
 }
 
 img {
     width: 20px;
     height: auto;
-    padding: 15px;
+    padding: 25px;
 }
 
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: helvetica, sans-serif;
     text-align: center;
     background-color: rgb(230, 236, 240);
@@ -24,20 +25,21 @@ body p {
 }
 
 #post {
-    padding: 20px;
+    display: inline;
 }
 
 .squarePost {
+    padding: 10px;
+    background: #eee;
+    margin: auto;
+    width: 90%;
+    height: 30px;
     background-color: rgb(255, 255, 255);
     margin-top: 80px;
-}
-
-#square {
-    width: 400px;
-    height: 150px;
-    background-color: rgb(232, 245, 253);
-    position: absolute;
-    margin-inline-start: 35%;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(200, 200, 200);
+    border-radius: 10px;
 }
 
 textarea {

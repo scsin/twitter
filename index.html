@@ -4,15 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="twitter.css"/>
+    <link rel="stylesheet" href="css/twitter.css"/>
+    <header><img src="images/twitter.png" alt=""></header>
 </head>
 <body>
     <script src="twitter.js"></script>
     <form action="" target="_self">
-        <textarea id="tweet" type="text" placeholder="What's hapenning?" oninput="count()"></textarea><br>
+        <textarea id="tweet" type="text" onkeypress="resize()" placeholder="What's hapenning?" oninput="count()"></textarea><br>
         <button id="button" type="button" disabled onclick="text()">Tweet</button>
-        <p id="count" class="default"></p>
-        <p id="post"></p>
+        <p id="count" class=""></p>
     </form>
+    <div class="squarePost">
+        <p id="post"></p>
+    </div>
 </body>
 </html>

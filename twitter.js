@@ -10,6 +10,7 @@ function text() {
 }
 
 function count() {
+    document.getElementById("count").className = "zero";
     post = document.getElementById("tweet").value;
     var count = (140 - post.length);
     document.getElementById("count").innerHTML = count;
@@ -27,3 +28,9 @@ function count() {
     }
 }
 
+function resize() {
+    resTextArea = document.getElementById("tweet");
+    while(resTextArea.scrollHeight > resTextArea.offsetHeight) {
+        resTextArea.rows += 1;
+    }
+}
