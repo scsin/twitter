@@ -1,8 +1,7 @@
 let post;
+let btn = document.getElementById("button");
 
-// Substituição do onclick
-// let btn = document.getElementById("button");
-// btn.addEventListener('click', text);
+btn.addEventListener("click", text);
 
 function text() {
     post = document.getElementById("tweet").value;
